@@ -1,0 +1,4 @@
+#!/bin/bash
+PATH=~jamoke/_apps/duplicity-0.6.08b/bin:$PATH
+~jamoke/duply_dev/duply.sh $@
+
