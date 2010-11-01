@@ -1,0 +1,3 @@
+#!/bin/bash
+echo $(awk "BEGIN{print strftime(\"${1:-%a %b %d %H:%M:%S %Z %Y}\"${2:+,$2})}")
+
