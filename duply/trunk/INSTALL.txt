@@ -27,6 +27,8 @@ designed to install multiple versions of duplicity in parallel. But doing this
 would allow you to go back to your working version of duplicity anytime. Here is
 how I do it. Change version and prefix to your preference.
 
+# install needed packages first
+python python-devel librsync-devel
 # download & extract
 wget http://.../duplicity-0.6.07.tar.gz
 tar xvf duplicity-0.6.07.tar.gz
