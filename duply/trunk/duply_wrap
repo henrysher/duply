@@ -2,5 +2,5 @@
 PATH=~jamoke/_apps/duplicity-0.6.15.fix/bin:$PATH
 # protect params with spaces, use "$@" instead
 #for ((a=1; a <= ${#@}; a++)); do eval ARG="\${${a}}"; ARGS="$ARGS \"$ARG\""; done;
-eval ~jamoke/duply_dev/duply.sh "$@"
+eval ~jamoke/duply_dev/duply.sh "$@" 
 
