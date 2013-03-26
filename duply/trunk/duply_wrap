@@ -1,8 +1,10 @@
 #!/bin/bash
 DUPLY=$(dirname "$0")/duply.sh
 #DUPLY=~jamoke/release/duply_1.5.2.3/duply
-PATH=~jamoke/_apps/duplicity-0.6.19/bin:$PATH
+PATH=~/duplicity.webdav/trunk/bin:$PATH
+#:/usr/local/python-2.4.6/bin:~jamoke/_apps/duplicity-0.6.20.u1/bin:$PATH
 # protect params with spaces, use "$@" instead
 #for ((a=1; a <= ${#@}; a++)); do eval ARG="\${${a}}"; ARGS="$ARGS \"$ARG\""; done;
+#echo count ${#@};for ((a=1; a <= ${#@}; a++)); do eval "echo ${a} -\> \${${a}}"; done;
 "$DUPLY" "$@" 
 
