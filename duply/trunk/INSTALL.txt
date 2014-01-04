@@ -20,7 +20,9 @@ INSTALLATION
 3. run 'duply usage' to get usage help
 
 
-TIP
+TIPS
+
+INSTALL MULTIPLE VERSIONS
 
 Sometimes a new version of duplicity has bugs. The default setup routine is not
 designed to install multiple versions of duplicity in parallel. But doing this 
@@ -46,6 +48,9 @@ mv $PREFIX/bin/duplicity_mod $PREFIX/bin/duplicity
 If this works flawlessly than you will find the duplicity executable under
 $PREFIX/bin/duplicity
 
+ADD LOCAL DUPLY/DUPLICITY TO SYSTEM PATH
+
+First make sure '/usr/local/bin' is in your PATH env var.
 To change the systemwide used duplicity don't symlink it! It won't find it's 
 script file structure it depends on then. Rather hack short wrapper like
 
@@ -69,3 +74,8 @@ use only a duplicity wrapper like
 PATH=~user/path/to/duplicity-0.6.18/bin:$PATH
 duplicity "$@"
 <--
+
+UNINSTALL DUPLICITY
+
+python setup.py install --record files.txt
+cat files.txt | xargs rm -rf
