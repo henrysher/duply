@@ -3,8 +3,14 @@ DUPLY=$(dirname "$0")/duply.sh
 #DUPLY=~jamoke/release/duply_1.5.2.3/duply
 #PATH=~/duplicity.webdav/trunk/bin:$PATH
 #PATH=/usr/local/python-2.4.6/bin:~jamoke/_apps/duplicity-0.6.20.u1/bin:$PATH
-PATH=/usr/local/gpg-1.4.16/bin:~jamoke/_apps/duplicity-0.6.23.dpbx/bin:$PATH
+PATH=/usr/local/gpg-1.4.16/bin:$PATH
+PATH=/usr/local/python-2.7.6/bin/:$PATH
+#/usr/local/python-2.4.6/bin/
 #/usr/local/gpg-1.4.16/bin:
+#~jamoke/_apps/duplicity-0.6.23/bin:
+#~jamoke/dupl-trunk.webdav/bin
+#~jamoke/dupl-trunk.webdav-0.7
+PATH=~jamoke/_apps/duplicity-0.6.24/bin:$PATH
 export PYTHONPATH=~jamoke/paramiko-1.12.0/:~jamoke/ecdsa-0.10/:~jamoke/dropbox-python-sdk-2.0.0/build/lib/:~jamoke/urllib3-1.7.1/build/lib/
 # protect params with spaces, use "$@" instead
 #for ((a=1; a <= ${#@}; a++)); do eval ARG="\${${a}}"; ARGS="$ARGS \"$ARG\""; done;
